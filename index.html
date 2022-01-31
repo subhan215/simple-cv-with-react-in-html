@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+  <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+</head>
+<body>
+    <script type="text/babel">
+        const root = document.getElementById("root");
+        function Contact(){
+             return <div>
+                <h2>Contact Information:</h2>
+                <p>Email: asifsubhan904@gmail.com</p>
+                <p>Phone: 0308-33978739</p>
+                </div>
+        }
+        function Education(){
+            return <div>
+                <h2>Education:</h2>
+                <h4>The City Grammar School:</h4>
+                <p>2016-2020</p>
+                <p>Passed Matric with A<b>+</b> Grade</p>
+                <h4>Adamjee Govt. Science College:</h4>
+                <p>2020-2022</p>
+                <p>Passed 1st year with 94.6% and now studying in 2nd year</p>
+                </div>
+        }
+        function Work(){
+            return <div>
+                 <h2>Work Experience:</h2>
+                 <h4>No Work Experience</h4>
+                
+                </div>
+        }
+        function CV(){
+            return <div>
+                <h1>Muhammad Subhan Muhammad Asif</h1>
+                 <Contact />
+                 <Education />
+                 <Work />
+                </div>
+        }
+        ReactDOM.render(<CV />, root)
+
+    </script>
+    <div id="root">
+
+    </div>
+</body>
+</html>
